@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel"
+    modelDirectory="/Formaggi/src-gen" creationIcons="false" editDirectory="/Formaggi.edit/src-gen"
+    editorDirectory="/Formaggi.editor/src-gen" modelPluginID="Formaggi" modelName="Formaggi"
+    rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container" codeFormatting="true"
+    importerID="org.eclipse.emf.importer.ecore" copyrightFields="false" importOrganizing="true">
+  <foreignModel>formaggi.ecore</foreignModel>
+  <testsDirectory xsi:nil="true"/>
+  <genPackages prefix="Formaggi" disposableProviderFactory="true" ecorePackage="formaggi.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="formaggi.ecore#//Size">
+      <genEnumLiterals ecoreEnumLiteral="formaggi.ecore#//Size/small"/>
+      <genEnumLiterals ecoreEnumLiteral="formaggi.ecore#//Size/large"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="formaggi.ecore#//Material">
+      <genEnumLiterals ecoreEnumLiteral="formaggi.ecore#//Material/rubber"/>
+      <genEnumLiterals ecoreEnumLiteral="formaggi.ecore#//Material/metal"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="formaggi.ecore#//Color">
+      <genEnumLiterals ecoreEnumLiteral="formaggi.ecore#//Color/gray"/>
+      <genEnumLiterals ecoreEnumLiteral="formaggi.ecore#//Color/blue"/>
+      <genEnumLiterals ecoreEnumLiteral="formaggi.ecore#//Color/brown"/>
+      <genEnumLiterals ecoreEnumLiteral="formaggi.ecore#//Color/yellow"/>
+      <genEnumLiterals ecoreEnumLiteral="formaggi.ecore#//Color/red"/>
+      <genEnumLiterals ecoreEnumLiteral="formaggi.ecore#//Color/green"/>
+      <genEnumLiterals ecoreEnumLiteral="formaggi.ecore#//Color/purple"/>
+      <genEnumLiterals ecoreEnumLiteral="formaggi.ecore#//Color/cyan"/>
+    </genEnums>
+    <genClasses ecoreClass="formaggi.ecore#//Object">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference formaggi.ecore#//Object/NE"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference formaggi.ecore#//Object/SE"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference formaggi.ecore#//Object/SW"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference formaggi.ecore#//Object/NW"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference formaggi.ecore#//Object/center"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute formaggi.ecore#//Object/size"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute formaggi.ecore#//Object/material"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute formaggi.ecore#//Object/color"/>
+    </genClasses>
+    <genClasses ecoreClass="formaggi.ecore#//Cube"/>
+    <genClasses ecoreClass="formaggi.ecore#//Sphere"/>
+    <genClasses ecoreClass="formaggi.ecore#//Cylinder"/>
+    <genClasses ecoreClass="formaggi.ecore#//Coordinates">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute formaggi.ecore#//Coordinates/x"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute formaggi.ecore#//Coordinates/y"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>
